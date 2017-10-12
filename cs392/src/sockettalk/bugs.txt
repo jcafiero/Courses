@@ -1,0 +1,26 @@
+Author: Jennifer Cafiero
+Date: May 14 2017
+I pledge my honor that I have abided by the Stevens Honor System.
+
+Bugs in Final Project
+-If a user exits the server by closing their client terminal window, instead of using the /exit command. Server receives 'ERROR writing: Connection reset by peer' and exits out
+-Ncurses would not implement properly.
+
+I would rather submit a working sockettalk, than submit a broken ncurses sockettalk that wouldn't even let users exit the client properly. Therefore, below I have explained how you would properly implement the final project solution. I know I didn't get to office hours this week, but I had two exams and another project that were due mid-week.
+
+How you WOULD complete the project:
+-Add #include <ncurses.h> to the top of both client.c and server.c
+-Turn on noecho() for parts of the code where it reads user input. This would prevent you from seeing a message two times when you send a message (once when you type in, another time when it is displayed on the server)
+-To make the output and input colors different:
+    start_color();  //place this at the beginning of the code, just after the line containing initscr();
+    init_pair(1, COLOR_RED, COLOR_BLACK); //place this anywhere after start_color() and before using the color combination. 
+    attron(COLOR_PAIR(1)); //place this when you want to turn on the color combination, before the write function calls to change the color of the output
+    attroff(COLOR_PAIR(1)); //place this when you want to turn off the color combination
+-When you resize the window, the corresponding key character is KEY_RESIZE. When checking for user input, we can add a cases to see if the input is a KEY_RESIZE character, then decrement/increment the window's height or width accordingly. If the key character is not KEY_RESIZE we would handle input as normal.
+-To manually reimplement the left arrow, right arrow, backspace, delete and enter keys, we can handle these as cases with the window resizing key character and normal input. keypad(stdscr, TRUE); will need to  be placed at the top of the code to capture special keystrokes like these characters. The left and right arrows will allow a user to move the cursor position character by character, and when detected, will increment or decrement the x position the cursor position accordingly by 1. The backspace key will decrement the x position of the cursor and use delch() to delete the character to the left of the cursor position. The delete key will allow the user to use delch() to delete the character at the cursor position. The up and down arrows will not be reimplemented because they are supposed to do nothing.
+-You would need to define the window at the beginning of the code, using the data structure WINDOW in ncurses.h. To do this, you would use:
+    int nlines, ncols, y0, x0;
+    WINDOW * win = newwin(nlines, ncols, y0, x0);
+    ^^These two lines initialize the window
+    wrefresh(win); // use this to print the effect of your changes to the window every time you make changes
+-To scroll the screen that exceeds the window, you would use scrollok(win, TRUE);
