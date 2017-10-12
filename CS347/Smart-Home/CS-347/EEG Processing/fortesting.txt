@@ -1,0 +1,7 @@
+we will be using junit
+this will be done via sending fake brain waves to our functions
+then seeing if the correct output is actually output (black-box)
+
+i.e. test if ice cream should be dispensed
+we will send the data that a person is sad
+and we should get that the person wants ice cream

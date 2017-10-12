@@ -1,0 +1,30 @@
+public class EEGProcessing {
+
+    public interpretData() {
+	
+    }
+    
+    public static void main(string[] args) {
+	//pseudo code since we don't have the retrieval teams class
+	EEGRetrieval data = new EEGRetrieval();
+	boolean iceCream = false, correctUser = false, etc = false;
+	//while there are brainwaves coming in run the loop
+	while(data.waves) {
+	    //either they auto update or we do it manually
+	    data = new EEGRetrieval();
+	    someObj = interpretData(data);
+	    someObj.alp
+	}  
+
+
+
+
+	//give data to hardware team in readable format
+	//can give a number in binary so its for them to read
+	//each digit corresponds to a function that the hardware
+	//team should run
+	100;
+	
+    }
+    
+}

@@ -1,0 +1,17 @@
+{
+  "name": "newalexaskill",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".mongorc.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.7",
+    "mongodb": "^2.2.22",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Monica Razak Anthony Picone Jenn Cafiero",
+  "license": "ISC"
+}
