@@ -1,0 +1,1 @@
+("6.8" ("dae0f2e8dd103e11f4e4cef10f5ca49393a2e393" . "8d98450a9fecc18ec5dc0d4f2138e867baa20bed") #"/Users/jcafiero/Downloads/class_hw_05/lang.scm" #"/Users/jcafiero/Downloads/class_hw_05/store.scm" (collects #"eopl" #"eopl.rkt") (collects #"errortrace" #"errortrace-key.rkt"))

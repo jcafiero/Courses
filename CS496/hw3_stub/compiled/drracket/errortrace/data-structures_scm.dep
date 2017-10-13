@@ -1,0 +1,1 @@
+("6.7" ("7010e99ba0c52f33d4eeb60b056b36ef0122b5ba" . "5444d3dc54182370078c951b229023af7b871118") (collects #"eopl" #"eopl.rkt") (collects #"errortrace" #"errortrace-key.rkt") (collects #"racket" #"contract" #"base.rkt"))
