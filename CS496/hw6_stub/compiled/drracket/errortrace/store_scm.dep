@@ -1,0 +1,1 @@
+("6.8" ("3150a13dfeecdd48c72c70bb554127642dc46631" . "edf7f715230e8984d9512447bdfa01e969804325") #"/Users/jcafiero/Downloads/hw6_stub/drscheme-init.scm" (collects #"eopl" #"eopl.rkt") (collects #"errortrace" #"errortrace-key.rkt"))
