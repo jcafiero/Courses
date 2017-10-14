@@ -1,0 +1,24 @@
+#Author: Jennifer Cafiero
+
+def minlist(x):
+    '''This function will return the smallest number from the list'''
+    return min(x)
+
+def add(x,y):
+    return x+y
+
+def gauss(x):
+    '''returns the sum of the intgers up to N'''
+    list=range(x)
+    additup= reduce(add, list)
+    return additup+x
+
+def square(x,y):
+    return x**2 + y**2
+
+def sumOfSquares(n):
+    '''returns the sum of the integers squared up to N'''
+    list=range(n)
+    additup= reduce(square, list)
+    return additup+n**2
+
