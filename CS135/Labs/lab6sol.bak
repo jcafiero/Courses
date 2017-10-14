@@ -1,0 +1,48 @@
+#lang eopl
+
+(define (keep-evens list-of-ints)
+  (if (equal? list-of-ints '())
+      '()
+      (if (equal? (modulo (car list-of-ints) 2) 0)
+          (append (list(car list-of-ints)) (keep-evens (cdr list-of-ints)))
+          (keep-evens (cdr list-of-ints)))))
+
+(define (filter predicate? list-of-things)
+  (if (equal? list-of-things '())
+      '()
+      (if (predicate? (car list-of-things))
+          (append (list (car list-of-things)) (filter predicate? (cdr list-of-things)))
+          (filter predicate? (cdr list-of-things)))))
+
+(define (EuclidAlgo a d)
+    (if (equal? (modulo a d) 0)
+        d
+        (EuclidAlgo d (modulo a d))))
+
+(define (Euclid-list a d)
+  (if (equal? (modulo a d) 0)
+      '()
+      (append (list (modulo a d)) (Euclid-list d (modulo a d)))))
+
+(define (integers n)
+  (cdr (reverse (Integers n))))
+
+(define (Integers n)
+  (if (= 0 n) 
+      '()
+      (cons n (Integers (- n 1)))))
+
+(define (sieve n)
+  (Sieve (integers n)))
+
+(define (Sieve list-of-ints)
+  (if (null? list-of-ints)
+      '()
+      (cons (car list-of-ints) (Sieve (cross-out (car list-of-ints) (cdr list-of-ints))))))
+
+(define (cross-out prime list-of-ints)
+    (if (null? list-of-ints)
+      '()
+      (if (equal? (modulo (car list-of-ints) prime) 0)
+          (cross-out prime (car (cdr list-of-ints)))
+          (cons (car list-of-ints) (cross-out prime (car (cdr list-of-ints)))))))

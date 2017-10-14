@@ -1,0 +1,83 @@
+#lang eopl
+
+;PART 1 map
+
+(define (pig-latin word)
+   (if (null? word)
+        '()
+        (if (equal? (car word) "q")
+            (append (cddr word) (cons (cons (car word) (cadr word)) '(a y)))
+        (append (cdr word) (cons (car word) '(a y))))))
+
+;PART 2 cond
+
+(define (zerooddelse n)
+  (cond [(zero? n) (display "you entered zero!")]
+        [(odd? n)  (display "your number is odd")]
+        [else (display "your number is even")]))
+
+(define (tax2012if income)
+  (if (< income 0)
+      (display "You made less than zero?")
+      (if (<= income 8700)
+          (* income 0.10)
+          (if (<= income 35350)
+              (+ 870 (* (- income 8700) 0.15))
+              (if (<= income 85650)
+                  (+ 4867.5 (* (- income 35350) 0.25))
+                  (if (<= income 178650)
+                      (+ 17442.5 (* (- income 85650) 0.28))
+                      (if (<= income 388350)
+                          (+ 43482.5 (* (- income 178650) 0.33))
+                          (+ 112683.15 (* (- income 388350) 0.35)))))))))
+
+(define (bmi height weight)
+  (cond 
+    [(<= height 0) (display "Invalid height entered")]
+    [(<= weight 0) (display "Invalid weight entered")]
+    [(< (* 703 (/ weight (* height height))) 16) (display "You are severely underweight")]
+    [(<= (* 703 (/ weight (* height height))) 18.5) (display "You are underweight")]
+    [(<= (* 703 (/ weight (* height height))) 25) (display "You are of normal weight")]
+    [(<= (* 703 (/ weight (* height height))) 30) (display "You are overweight")]
+    [(<= (* 703 (/ weight (* height height))) 40) (display "You are obese")]
+    [(<= (* 703 (/ weight (* height height))) 50) (display "You are morbidly obese")]
+    (else (display "How are you alive"))
+    ))
+
+;PART 3
+
+(define (build-seq start step end)
+  (cond
+    [(< step 0) '()]
+    [(< end start) '()]
+    [(< start 0) (list start)]
+    [else (append (list start) (build-seq (+ start step) step end))]
+     )
+  )
+    
+(define (arithmetic-prog a_0 difference iNdex)
+  (cond
+    [(equal? iNdex 0) '()]
+    [else (cons a_0 (arithmetic-prog (+ a_0 difference) difference (- iNdex 1)))]
+    ))
+
+(arithmetic-prog 2 3 5)
+(arithmetic-prog 0 1 10)
+(arithmetic-prog 0 -1 5)
+
+(define (geometric-prog a_0 ratio iNdex)
+  (cond 
+    [(equal? iNdex 0) '()]
+    [else (cons a_0 (geometric-prog (* a_0 ratio) ratio (- iNdex 1)))]
+    ))
+
+(geometric-prog 1 10 5)
+(geometric-prog 1 2 11)
+(geometric-prog 7 -3 5)
+
+(define (sum list-of-nums)
+  (cond
+    [(equal? list-of-nums '()) 0]
+    [else (+ (car list-of-nums) (sum (cdr list-of-nums)))]
+    ))
+

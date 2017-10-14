@@ -1,0 +1,9 @@
+#lang eopl
+
+(define (sum n)
+  (cond
+    [(eq? n 0) 0]
+    [(eq? n 1) 1]
+    [else ( + (sum (- n 1)) n)]
+    )
+  )
