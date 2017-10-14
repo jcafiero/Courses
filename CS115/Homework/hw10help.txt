@@ -1,0 +1,8 @@
+Name:FavMovie
+
+s2 = s.title() 
+>>'Nickelback'
+'     nickelback  '
+e2= e.strip
+>>'nickelback'
+s3= e2.title()
