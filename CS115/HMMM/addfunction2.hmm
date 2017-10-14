@@ -1,0 +1,12 @@
+#addfunction.hmmm
+#read two numbers calls add(x,y) to add them
+
+00 setn r15 xxx 	# set stack pointer to first memory address after enod of program
+01 read r1
+02 read r2
+03 storer r1 r15
+04 addn r15 1
+05 storer r2 r15
+06 addn r15 1
+07 calln r14 yyy
+08 

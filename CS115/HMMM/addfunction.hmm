@@ -1,0 +1,7 @@
+# addfunction.hmmm
+#Reads two numbers calls add(x, y) to add them.
+00 read r1
+01 read r2
+02 add r3 r1 r2
+03 write r3
+04 halt

@@ -1,0 +1,8 @@
+0	read r1		#Get n (assume n >= 0)
+1	setn	r13 1	#initialize r13
+2	jeqzn r1 6	#done if r1 is 0
+3	mul r13 r13 r1	#change r13 = r13 * r1
+4	addn r1 -1	#change r1 = r1 - 1
+5	jump 2	#repeat
+6	write r13
+7	halt
