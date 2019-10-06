@@ -1,0 +1,355 @@
+<!-- Author: Jennifer Cafiero -->
+<!-- I pledge my honor that I have abided by the Stevens Honor System. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Nice Cream Shoppe</title>
+    <link href="../public/css/styles.min.css" type="text/css" rel="stylesheet">
+    <script src="/public/js/vendor.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">The Nice Cream Shoppe</h1>
+        <p>Welcome to the first online ice cream delivery service!</p>
+    </div>
+
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <div class="nav-menu col-lg-3 col-md-4 col-sm-12">
+                <nav class="nav-side-menu nav nav-pills flex-column">
+                    <a href="#vanilla" class="flex-sm-fill text-sm-center nav-link">Boring Vanilla</a>
+                    <a href="#chocolate" class="flex-sm-fill text-sm-center nav-link">Boring Chocolate</a>
+                    <a href="#chocolate-vanilla" class="flex-sm-fill text-sm-center nav-link">Chocolate Covered Vanilla
+                        Bar</a>
+                    <a href="#crazy-candy" class="flex-sm-fill text-sm-center nav-link">Crazy Candy Milkshake</a>
+                    <a href="#matcha" class="flex-sm-fill text-sm-center nav-link">Matcha</a>
+                    <a href="#rainbow" class="flex-sm-fill text-sm-center nav-link">Rainbow</a>
+                    <a href="#air" class="flex-sm-fill text-sm-center nav-link">"Air" Cone</a>
+                    <a href="#reeses" class="flex-sm-fill text-sm-center nav-link">Reeses</a>
+                    <a href="#watermelon" class="flex-sm-fill text-sm-center nav-link">Wild Watermelon</a>
+                    <a href="#chocolate-sundae" class="flex-sm-fill text-sm-center nav-link">Chocolate 
+                        Sundae</a>
+                </nav>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="flex-container"> -->
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="row">
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="vanilla">
+                            <img class="card-img-top" src="../public/img/vanilla.jpg" alt="Vanilla ice cream cone">
+                            <div class="card-body">
+                                <h2 class="card-title">Boring Vanilla</h2>
+                                <p class="card-text">Plain Jane's go-to rich vanilla flavor</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-vanilla">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="chocolate">
+                            <img class="card-img-top" src="../public/img/chocolate.jpg" alt="Chocolate ice cream cone">
+                            <div class="card-body">
+                                <h2 class="card-title">Boring Chocolate</h2>
+                                <p class="card-text">Smooth and creamy, slow-churned chocolate</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-chocolate">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+                <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="chocolate-vanilla">
+                            <img class="card-img-top" src="../public/img/chocolate-covered-vanilla.jpg" alt="Chocolate covered vanilla bar">
+                            <div class="card-body">
+                                <h2 class="card-title">Chocolate Covered Vanilla Bar</h2>
+                                <p class="card-text">A classic dessert during summertime months</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-choc-vanilla">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+                <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="crazy-candy">
+                            <img class="card-img-top" src="../public/img/crazy-milkshake.jpg" alt="Milkshake topped with pretzels and chocolate candy">
+                            <div class="card-body">
+                                <h2 class="card-title">Crazy Candy Milkshake</h2>
+                                <p class="card-text">For when you can't decide on sweet or salty -- have both!</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-crazy">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+                <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="matcha">
+                            <img class="card-img-top" src="../public/img/matcha.jpg" alt="Matcha ice cream">
+                            <div class="card-body">
+                                <h2 class="card-title">Matcha</h2>
+                                <p class="card-text">Slow to follow the trends of 2018/9, enjoy this tea powder
+                                    flavored ice cream</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-matcha">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+                <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="rainbow">
+                            <img class="card-img-top" src="../public/img/rainbow.jpg" alt="Rainbow ice cream">
+                            <div class="card-body">
+                                <h2 class="card-title">Rainbow</h2>
+                                <p class="card-text">Ever wonder what the rainbow tastes like? Here's our best guess!</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-rainbow">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="air">
+                            <img class="card-img-top" src="../public/img/empty-cone.jpg" alt="Cloud in ice cream cone">
+                            <div class="card-body">
+                                <h2 class="card-title">"Air" Cone</h2>
+                                <p class="card-text">Great option for those looking to cut down on sugar and dairy (and
+                                    fun)</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-air">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="reeses">
+                            <img class="card-img-top" src="../public/img/reeses.jpg" alt="Reeses ice cream">
+                            <div class="card-body">
+                                <h2 class="card-title">Reeses</h2>
+                                <p class="card-text">The classic chocolate-peanut butter combo gets topped with a
+                                    brownie</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-reeses">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="watermelon">
+                            <img class="card-img-top" src="../public/img/watermelon.jpg" alt="Watermelon ice cream">
+                            <div class="card-body">
+                                <h2 class="card-title">Wild Watermelon</h2>
+                                <p class="card-text">For your cravings for summer in the middle of winter</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-watermelon">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col"> -->
+                    <div class="tile col-sm-10 col-md-6 col-lg-4">
+                        <div class="card" id="chocolate-sundae">
+                            <img class="card-img-top" src="../public/img/choc-sundae.jpg" alt="Chocolate sundae">
+                            <div class="card-body">
+                                <h2 class="card-title">Chocolate Sundae</h2>
+                                <p class="card-text">A delicious chocolate syrup sundae topped with a wafer disc</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-choc-sundae">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-vanilla" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Boring Vanilla</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Boring Vanilla" class="img-fluid" src="../public/img/vanilla.jpg">
+                    <p>Smooth and creamy, this vanilla flavor is churned for over ten hours. But seriously, why would
+                        you order vanilla ice cream online?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-chocolate" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Boring Chocolate</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Boring Chocolate" class="img-fluid" src="../public/img/chocolate.jpg">
+                    <p>Decadent and luscious, this chocolate flavor is made using the finest cocoa powder found at the
+                        local grocer. At least you have better taste in ice cream than Plain Jane</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-choc-vanilla" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Chocolate Covered Vanilla Bar</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Chocolate Covered Vanilla Bar" class="img-fluid" src="../public/img/chocolate-covered-vanilla.jpg">
+                    <p>Similar to deserts found at your local ice cream shop, this dessert is best enjoyed on the
+                        Boardwalk. A crunchy chocolate shell coats smooth vanilla soft serve with a popsicle stick
+                        inside. Order yours today and drive to the beach to recreate this magic phenomenon!</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-crazy" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Crazy Candy Milkshake</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Crazy candy covered milkshake" class="img-fluid" src="../public/img/crazy-milkshake.jpg">
+                    <p>A plain chocolate milkshake covered with caramel corn, pretzels, ice cream cones, Twix pieces, whipped cream, and more. Get ready for a sugar coma after enjoying this beverage!</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-matcha" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Matcha</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Matcha Ice Cream" class="img-fluid" src="../public/img/matcha.jpg">
+                    <p>We never really enjoy jumping on the hipster bandwagon, but our social media manager begged us
+                        to include something she could take a picture with. Nobody in our office enjoys green tea, so
+                        this hasn't been taste tested yet. Be the first customer to try this flavor today!</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-rainbow" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Rainbow</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Rainbow ice cream" class="img-fluid" src="../public/img/rainbow.jpg">
+                    <p>Ever curious to try what the rainbow tastes like? We've tried making the closest flavor possible! This ice cream mixes orange, blueberry, and strawberry flavors together.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-air" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">"Air" Cone</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Ice cream cone with cloud" class="img-fluid" src="../public/img/empty-cone.jpg">
+                    <p>Sometimes your personal diet doesn't allow you to indulge in ice cream, but if you still want to enjoy dessert with your friends, purchase this waffle cone!</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-reeses" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Reese's</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Reese's ice cream" class="img-fluid" src="../public/img/reeses.jpg">
+                    <p>Chocolate and peanut butter swirls make our Reese's flavor one of our best sellers. This ice
+                        cream is topped with crushed up Reese's candy pieces and brownie chunks.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-watermelon" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Wild Watermelon</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Watermelon ice cream cone" class="img-fluid" src="../public/img/watermelon.jpg">
+                    <p>Eat this ice cream and it will bring you back to summertime with its watermelon flavor. We've even made it aesthetically pleasing with the whole red-green scoop comobo. Optionally served in a chocolate coated cone, because nothing sounds more appetizing than watermelon and chocolate.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-choc-sundae" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Chocolate Sundae</h2>
+                </div>
+
+                <div class="modal-body">
+                    <img alt="Chocolate sundae" class="img-fluid" src="../public/img/choc-sundae.jpg">
+                    <p>Vanilla ice cream drowned in high quality chocolate syrup and coated in a pyramid of whipped cream. This sundae is topped off with a vanilla wafer.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="close" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
