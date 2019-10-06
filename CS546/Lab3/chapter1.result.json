@@ -1,0 +1,24 @@
+{
+    "fileName": "Hello, my",
+    "totalLetters": 46,
+    "totalWords": 14,
+    "uniqueWords": 14,
+    "longWords": 1,
+    "averageWordLength": 3.2857142857142856,
+    "wordOccurrences": {
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "23": 1,
+        "hello": 1,
+        "my": 1,
+        "this": 1,
+        "is": 1,
+        "a": 1,
+        "great": 1,
+        "day": 1,
+        "to": 1,
+        "say": 1,
+        "hellonnthelllo": 1
+    }
+}
