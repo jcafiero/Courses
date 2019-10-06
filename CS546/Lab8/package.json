@@ -1,0 +1,20 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "description": "CS546 Lab8 Palindromes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Jennifer Cafiero",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongo": "^0.1.0",
+    "mongod": "^2.0.0",
+    "uuid": "^3.1.0"
+  }
+}

@@ -1,0 +1,34 @@
+<!--Author: Jennifer Cafiero-->
+<!--I pledge my honor that I have abided by the Stevens Honor System-->
+
+<div class="row">
+    <div class="col-sm-12">
+        <form id="static-form" method="post">
+            <div class="form-group">
+                <label class="pal-lbl" for="term">String To Check</label>
+                <br/>
+                <textarea class="form-control" rows="4" cols="50" id="term" name="term" placeholder="String To check"></textarea>
+            </div>
+            <div class="form-group toggle" id="error-container">
+                <div class="alert alert-danger error-msg">
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+
+            <div class="form-group toggle" id="palindrome-container">
+                <div class="pal-group">
+                    <ul class="resultlist is-palindrome" id="palindromes">
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group toggle" id="not-palindrome-container">
+                <div class="pal-group">
+                    <ul class="resultlist not-palindrome" id="not-palindromes">
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
