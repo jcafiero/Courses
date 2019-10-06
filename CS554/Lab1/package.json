@@ -1,0 +1,19 @@
+{
+  "name": "cs554-lab1",
+  "version": "1.0.0",
+  "description": "CS554 Lab 1 - Reviewing API Development",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jennifer Cafiero",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.2",
+    "mongod": "^2.0.0",
+    "mongodb": "^2.2.36",
+    "uuid": "^3.3.2"
+  }
+}

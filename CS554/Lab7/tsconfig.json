@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",     //default is es5
+    "module": "commonjs",//CommonJs style module in output
+    "moduleResolution": "node",
+    "outDir": "./dist"  ,   //change the output directory
+    "baseUrl": "./src",
+    "pretty": true,
+    "resolveJsonModule": true, //to import out json database,
+    // "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/*.ts",
+    "src/**/*.ts"      //which kind of files to compile
+  ],
+  "exclude": [
+    "node_modules"     //which files or directories to ignore
+  ]
+}

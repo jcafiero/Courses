@@ -1,0 +1,20 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "Redis lab",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jennifer Cafiero",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "express": "^4.14.1",
+    "flat": "^2.0.1",
+    "fs": "0.0.1-security",
+    "node-redis": "^0.1.7",
+    "redis": "^2.8.0"
+  }
+}

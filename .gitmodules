@@ -1,0 +1,3 @@
+[submodule "CS554/Lab3"]
+	path = CS554/Lab3
+	url = https://github.com/jcafiero/react-pokedex

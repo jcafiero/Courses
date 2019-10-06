@@ -1,0 +1,53 @@
+@import "./_custom_variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700');
+
+body {
+    background-color: $background;
+    font-family: 'Noto Serif', serif !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.card-img-top {
+    height: 180px;
+}
+
+.nav-side-menu {
+    // min-width: 200px;
+    background-color: $gray-200;
+    border: solid 2px $primary;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: -5px;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px $primary;  
+    max-width: 18rem;
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+.btn-primary {
+    box-shadow: 2px 3px $black;
+    border-radius: 20px;
+}
+
+@media (max-width:767px) {
+    .tile {
+        margin: 0px auto;
+    }
+    .card {
+        max-width: 24rem;
+        margin: 10px auto;
+    }
+    .nav-side-menu {
+        max-width: 400px;
+        margin: 0 auto 20px;
+    }
+}
