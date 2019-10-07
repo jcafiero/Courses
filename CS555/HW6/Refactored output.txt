@@ -1,0 +1,61 @@
+test_child_born_after_dad_death (test_us09.TestUS09) ... ok
+test_child_born_after_mom_death (test_us09.TestUS09) ... ok
+test_child_born_before_both_parents_death (test_us09.TestUS09) ... ok
+test_child_born_within_9m_dad_death (test_us09.TestUS09) ... ok
+test_children_born_after_both_parents_death (test_us09.TestUS09) ... ok
+test_alive (test_us29.TestUS29) ... ok
+test_deaths (test_us29.TestUS29) ... ok
+test_empty_input (test_us29.TestUS29) ... ok
+test_unique_IDs_all_good (test_us22.TestUS22) ... ok
+test_unique_IDs_bad_families (test_us22.TestUS22) ... ok
+test_unique_IDs_bad_individuals (test_us22.TestUS22) ... ok
+test_unique_IDs_bad_individuals_and_families (test_us22.TestUS22) ... ok
+test_unique_IDs_empty_inputs (test_us22.TestUS22) ... ok
+test_age_calculation (test_us27.TestUS27) ... ok
+test_age_print (test_us27.TestUS27) ... ok
+test_sibling_spacings_all_good (test_us13.TestUS13) ... ok
+test_sibling_spacings_empty_inputs (test_us13.TestUS13) ... ok
+test_sibling_spacings_too_close (test_us13.TestUS13) ... ok
+test_sibling_spacings_too_close_and_too_far (test_us13.TestUS13) ... ok
+test_sibling_spacings_twins_too_far (test_us13.TestUS13) ... ok
+test_all_individuals_under_150 (test_us07.TestUS07) ... ok
+test_individual_exactly_150 (test_us07.TestUS07) ... ok
+test_individual_over_150_and_death (test_us07.TestUS07) ... ok
+test_individual_under_150_and_death (test_us07.TestUS07) ... ok
+test_multiple_individuals_over_150 (test_us07.TestUS07) ... ok
+test_one_individual_over_150 (test_us07.TestUS07) ... ok
+test_all_individuals_married_after_14 (test_us10.TestUS10) ... ok
+test_one_couple_married_under_14 (test_us10.TestUS10) ... ok
+test_one_husband_married_under_14 (test_us10.TestUS10) ... ok
+test_one_wife_married_under_14 (test_us10.TestUS10) ... ok
+test_widowed_marriage_under_14 (test_us10.TestUS10) ... ok
+test_empty_families (test_us04.TestUS04) ... ok
+test_families_all_bad (test_us04.TestUS04) ... ok
+test_families_all_good (test_us04.TestUS04) ... ok
+test_family_1_bad (test_us04.TestUS04) ... ok
+test_family_2_bad (test_us04.TestUS04) ... ok
+test_empty_input (test_us15.TestUS15) ... ok
+test_family_with_too_many_sibilings (test_us15.TestUS15) ... ok
+test_good_family (test_us15.TestUS15) ... ok
+test_all_dates_before_current (test_us01.TestUS01) ... ok
+test_birth_after_current (test_us01.TestUS01) ... ok
+test_death_after_current (test_us01.TestUS01) ... ok
+test_divorce_after_current (test_us01.TestUS01) ... ok
+test_marriage_after_current (test_us01.TestUS01) ... ok
+test_unique_birthdays_bad (test_us25.TestUS25) ... ok
+test_unique_names_all_good (test_us25.TestUS25) ... ok
+test_unique_names_and_birthday_bad (test_us25.TestUS25) ... ok
+test_unique_names_empty_inputs (test_us25.TestUS25) ... ok
+test_unique_names_good (test_us25.TestUS25) ... ok
+test_no_bigamy_after_death (test_us11.TestUS11) ... ok
+test_no_bigamy_after_div (test_us11.TestUS11) ... ok
+test_no_bigamy_empty_inputs (test_us11.TestUS11) ... ok
+test_no_bigamy_marr_b4_death (test_us11.TestUS11) ... ok
+test_no_bigamy_marr_b4_div (test_us11.TestUS11) ... ok
+test_no_bigamy_no_div_or_death (test_us11.TestUS11) ... ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 0.141s
+
+OK
+Press any key to continue...
